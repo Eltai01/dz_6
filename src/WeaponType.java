@@ -1,9 +1,8 @@
-public enum WeaponType {
-    EDGED_WEAPONS,
-
-    THROWN_WEAPONS,
-
-    FIREARMS;
-
-
+enum WeaponType {
+    SWORD,
+    BOW,
+    STAFF
 }
+
+
+

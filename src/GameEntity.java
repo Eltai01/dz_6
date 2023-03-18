@@ -1,14 +1,28 @@
-public class GameEntity {
-    private int healths;
+class GameEntity {
+    private String name;
+    private int health;
+    private int damage;
 
-    private  int damage;
-
-    public int getHealths() {
-        return healths;
+    public GameEntity(String name, int health, int damage) {
+        this.name = name;
+        this.health = health;
+        this.damage = damage;
     }
 
-    public void setHealths(int healths) {
-        this.healths = healths;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
     }
 
     public int getDamage() {

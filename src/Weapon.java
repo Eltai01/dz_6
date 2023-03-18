@@ -1,21 +1,25 @@
-public class Weapon {
-    private String weaponType;
+class Weapon {
+    private WeaponType type;
+    private String name;
 
-    private String NameWeapon;
-
-    public String getWeaponType() {
-        return weaponType;
+    public Weapon(WeaponType type, String name) {
+        this.type = type;
+        this.name = name;
     }
 
-    public void setWeaponType(String weaponType) {
-        this.weaponType = weaponType;
+    public WeaponType getType() {
+        return type;
     }
 
-    public String getNameWeapon() {
-        return NameWeapon;
+    public void setType(WeaponType type) {
+        this.type = type;
     }
 
-    public void setNameWeapon(String nameWeapon) {
-        NameWeapon = nameWeapon;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
